@@ -8,3 +8,44 @@ google() {
 md() {
  mkdir $1; cd $1
 }
+
+muppet_prompt () {
+
+  # ANSI Escape Commands
+  ESC="\033"
+  NORMAL="\[$ESC[m\]"
+  RESET="$ESC[${DULL};${FG_WHITE};${BG_NULL}m"
+
+  CURRENTENV=`demeter env|awk '{printf $1}'`
+  TIME=$(date +"%H:%M:%S")
+  BRANCH=$(__git_ps1 'git:(%s) ')
+
+  printf "\n$PWD « $BRANCH$RESET$CURRENTENV [$TIME]$RESET"
+}
+
+eval "$(rbenv init -)"
+
+
+export EDITOR="atom"
+export GIT_EDITOR="atom -nw"
+
+#######################################
+# Neighborly shell profile!
+alias d="docker"
+alias dm="docker-machine"
+alias dc="docker-compose"
+alias de="demeter"
+alias des="demeter set_env local && demeter env"
+
+alias dr="demeter r"
+alias dri="demeter r issuances"
+alias drm="demeter r main"
+
+alias debian="docker run --rm -it debian bash"
+
+alias em="ember"
+alias es="ember serve"
+alias ets="ember test --server"
+
+export PATH="/Users/samrichards/projects/demeter:$PATH"
+#######################################
