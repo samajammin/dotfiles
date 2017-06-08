@@ -9,22 +9,7 @@ md() {
  mkdir $1; cd $1
 }
 
-muppet_prompt () {
-
-  # ANSI Escape Commands
-  ESC="\033"
-  NORMAL="\[$ESC[m\]"
-  RESET="$ESC[${DULL};${FG_WHITE};${BG_NULL}m"
-
-  CURRENTENV=`demeter env|awk '{printf $1}'`
-  TIME=$(date +"%H:%M:%S")
-  BRANCH=$(__git_ps1 'git:(%s) ')
-
-  printf "\n$PWD « $BRANCH$RESET$CURRENTENV [$TIME]$RESET"
-}
-
 eval "$(rbenv init -)"
-
 
 export EDITOR="atom"
 export GIT_EDITOR="atom -nw"
