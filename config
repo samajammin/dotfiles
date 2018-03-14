@@ -28,4 +28,8 @@ export HISTCONTROL=ignoreboth
 shopt -s histappend
 PROMPT_COMMAND='history -a'
 export HISTSIZE=100000
-PS1="\n\w$BRIGHT_BLUE « $GREEN\$(__git_ps1 'git:(%s)')$BRIGHT_BLUE env:(\$(demeter env|awk '{printf $1}')) $BRIGHT_RED[\t] \n$RESET\$ "
+#PS1="\n\w$BRIGHT_BLUE « $GREEN\$(__git_ps1 'git:(%s)')$BRIGHT_BLUE env:(\$(de env|awk "NR==2")) \n$RESET\$ "
+PS1="\n\w$BRIGHT_BLUE « $GREEN\$(__git_ps1 'git:(%s)') \n$RESET\$ "
+
+
+LS_COLORS=$LS_COLORS:'di=0;35:' ; export LS_COLORS

@@ -2,29 +2,42 @@ source ~/.dotfiles/env
 source ~/.dotfiles/config
 
 google() {
- open /Applications/Google\ Chrome.app/ "http://www.google.com/search?q= $1"
+  open /Applications/Google\ Chrome.app/ "https://www.google.com/search?q= $1"
+}
+
+drive() {
+  open /Applications/Google\ Chrome.app/ "https://drive.google.com/drive/search?hl=en&q=hey $1"
 }
 
 md() {
  mkdir $1; cd $1
 }
 
-eval "$(rbenv init -)"
-
 export EDITOR="atom"
 export GIT_EDITOR="atom -nw"
 
-#######################################
-# Neighborly shell profile!
-alias d="docker"
-alias dm="docker-machine"
-alias dc="docker-compose"
-alias de="demeter"
-alias des="demeter set_env local && demeter env"
+###############################################################################
+# Atom
+alias a='atom'
+alias ah='atom .'
+alias apmup='apm update --no-confirm'
+alias apmi='apm install'
 
-alias dr="demeter r"
-alias dri="demeter r issuances"
-alias drm="demeter r main"
+###############################################################################
+# Code
+alias ci='code-insiders'
+
+###############################################################################
+# Neighborly
+# alias d="docker"
+# alias dm="docker-machine"
+# alias dc="docker-compose"
+# alias de="demeter"
+# alias des="demeter set_env local && demeter env"
+#
+# alias dr="demeter r"
+# alias dri="demeter r issuances"
+# alias drm="demeter r main"
 
 alias debian="docker run --rm -it debian bash"
 
@@ -33,4 +46,15 @@ alias es="ember serve"
 alias ets="ember test --server"
 
 export PATH="/Users/samrichards/projects/demeter:$PATH"
-#######################################
+###############################################################################
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval "$(rbenv init -)"
+
+###########################################
+# Go settings
+export GOPATH="/Users/samrichards/projects/go"
+export PATH="/Users/samrichards/projects/go/bin:$PATH"
