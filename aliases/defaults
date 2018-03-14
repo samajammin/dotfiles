@@ -13,20 +13,14 @@ alias ~="cd ~/"
 alias ..="cd ../"
 alias ...="cd ../../"
 alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
+alias filecount="ls -l | grep -v ^l | wc -l"
 
-# secure your moviments and commands
+# secure movements and commands
 alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
-
-# vim
-alias v='mvim'
-
-# NeoVim
-alias n='nvim'
 
 # Docker
 alias d="docker"
 alias dc="docker-compose"
 alias dm="docker-machine"
-alias de="demeter"
