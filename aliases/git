@@ -1,7 +1,9 @@
+alias gb='git branch --sort=committerdate'
 alias gba='git branch -a'
+alias gbn='git checkout -b'
 alias gcm='git checkout master'
 alias gcd='git checkout develop'
-alias gck="git checkout"
+alias gco="git checkout"
 alias glpp='git log --pretty=oneline'
 alias gs='git status'
 alias gd='git diff'
@@ -13,9 +15,9 @@ alias gaa="git add --all"
 alias gmt='git mergetool'
 alias gx='gitx'
 alias gg='gitg'
-alias new-branch='git checkout -b'
 alias gp="git push"
+alias grh='git reset HEAD *'
 
-alias upb='git checkout production && git merge origin/master && git push && git checkout master'
-
+alias fetch='git fetch && git checkout'
+alias prune-branches="git branch --merged develop | grep -v -e 'develop' -e '\*' | xargs -n 1 git branch -d && git remote prune origin"
 alias uncommit="git reset --soft HEAD^"
