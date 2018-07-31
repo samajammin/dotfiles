@@ -13,8 +13,8 @@ md() {
  mkdir $1; cd $1
 }
 
-export EDITOR="atom"
-export GIT_EDITOR="atom -nw"
+export EDITOR="code-insiders"
+export GIT_EDITOR="code-insiders -nw"
 
 ###############################################################################
 # Atom
