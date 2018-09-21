@@ -1,13 +1,8 @@
-# Dotfiles to setup your bash environment.
-
-![screen shot 2014-04-14 at 6 33 12 pm](https://cloud.githubusercontent.com/assets/230476/2701114/da7825a8-c41c-11e3-897b-cb0ecbf39357.png)
-
-
 ## Usage
 
 Clone repository:
 
-```$ git clone git://github.com/josemarluedke/dotfiles.git ~/.dotfiles```
+```$ git clone git://github.com/sbrichards/dotfiles.git ~/.dotfiles```
 
 Install the dotfiles:
 
@@ -15,8 +10,14 @@ Install the dotfiles:
 
 Restart your terminal and you are ready to go!
 
+## Themes
+
+If you're using Iterm2, I recommend the [Atom theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Atom.itermcolors).
+
 
 ## License
+
+Thank you [@josemarluedke](https://github.com/josemarluedke) for the dotfiles foundation to build off (& for being an amazing mentor)!
 
 Copyright (c) 2012-2013 Josemar Luedke
 
