@@ -6,7 +6,7 @@ google() {
 }
 
 drive() {
-  open /Applications/Google\ Chrome.app/ "https://drive.google.com/drive/search?hl=en&q=hey $1"
+  open /Applications/Google\ Chrome.app/ "https://drive.google.com/drive/search?hl=en&q=$1"
 }
 
 md() {
@@ -28,24 +28,11 @@ alias apmi='apm install'
 alias ci='code-insiders'
 
 ###############################################################################
-# Neighborly
-# alias d="docker"
-# alias dm="docker-machine"
-# alias dc="docker-compose"
-# alias de="demeter"
-# alias des="demeter set_env local && demeter env"
-#
-# alias dr="demeter r"
-# alias dri="demeter r issuances"
-# alias drm="demeter r main"
-
-alias debian="docker run --rm -it debian bash"
-
+# Ember
 alias em="ember"
 alias es="ember serve"
 alias ets="ember test --server"
 
-export PATH="/Users/samrichards/projects/demeter:$PATH"
 ###############################################################################
 
 export NVM_DIR="$HOME/.nvm"
