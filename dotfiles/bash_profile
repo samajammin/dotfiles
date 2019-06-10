@@ -45,6 +45,11 @@ export NVM_DIR="$HOME/.nvm"
 eval "$(rbenv init -)"
 
 ###########################################
+# Python
+
+export PATH=/usr/local/opt/python/libexec/bin:$PATH
+
+###########################################
 # Go
 export GOPATH="/Users/samrichards/code/go"
 export PATH="/Users/samrichards/code/go/bin:$PATH"
