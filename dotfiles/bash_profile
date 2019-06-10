@@ -2,11 +2,11 @@ source ~/.dotfiles/env
 source ~/.dotfiles/config
 
 google() {
-  open /Applications/Google\ Chrome.app/ "https://www.google.com/search?q= $1"
+  open /Applications/Brave\ Browser.app/ "https://www.google.com/search?q= $1"
 }
 
 drive() {
-  open /Applications/Google\ Chrome.app/ "https://drive.google.com/drive/search?hl=en&q=$1"
+  open /Applications/Brave\ Browser.app/ "https://drive.google.com/drive/search?hl=en&q=$1"
 }
 
 md() {
