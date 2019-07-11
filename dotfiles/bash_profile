@@ -71,3 +71,7 @@ if [ -f '/Users/samrichards/google-cloud-sdk/completion.bash.inc' ]; then . '/Us
 ###########################################
 # Nix
 if [ -e /Users/samrichards/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samrichards/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
+
+###########################################
+# bash-completion
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
