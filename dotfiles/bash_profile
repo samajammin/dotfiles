@@ -47,7 +47,10 @@ eval "$(rbenv init -)"
 ###########################################
 # Python
 
-export PATH=/usr/local/opt/python/libexec/bin:$PATH
+# TODO uncomment for MacOS default python version 3x (e.g. for vyper)
+# export PATH=/usr/local/opt/python/libexec/bin:$PATH
+# then run: $ source ~/vyper-venv/bin/activate
+alias vypervenv="source ~/vyper-venv/bin/activate"
 
 ###########################################
 # Go
@@ -56,9 +59,15 @@ export PATH="/Users/samrichards/code/go/bin:$PATH"
 
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
 
+###########################################
+# gcloud
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/samrichards/google-cloud-sdk/path.bash.inc' ]; then . '/Users/samrichards/google-cloud-sdk/path.bash.inc'; fi
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/samrichards/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/samrichards/google-cloud-sdk/completion.bash.inc'; fi
+
+###########################################
+# Nix
+if [ -e /Users/samrichards/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samrichards/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
