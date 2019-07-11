@@ -69,9 +69,16 @@ if [ -f '/Users/samrichards/google-cloud-sdk/path.bash.inc' ]; then . '/Users/sa
 if [ -f '/Users/samrichards/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/samrichards/google-cloud-sdk/completion.bash.inc'; fi
 
 ###########################################
+# kubectl
+
+alias k="kubectl"
+complete -F __start_kubectl k
+
+###########################################
 # Nix
 if [ -e /Users/samrichards/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samrichards/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 ###########################################
 # bash-completion
+export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
