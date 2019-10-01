@@ -79,6 +79,10 @@ complete -F __start_kubectl k
 if [ -e /Users/samrichards/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samrichards/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
 
 ###########################################
+# Truffle
+alias t="truffle"
+
+###########################################
 # bash-completion
 export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
 [[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
