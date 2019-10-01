@@ -36,6 +36,7 @@
   bv             = !git branch --color -v | cut -c1-100
   up             = pull --rebase --autostash
   amend          = commit --amend --no-edit
+  co-pr          = !sh -c 'git fetch origin pull/$1/head:pr/$1 && git checkout pr/$1' -
 [push]
   default        = current
 [pull]
