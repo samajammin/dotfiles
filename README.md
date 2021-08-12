@@ -2,7 +2,7 @@
 
 Clone repository:
 
-```$ git clone git://github.com/sbrichards/dotfiles.git ~/.dotfiles```
+```$ git clone git://github.com/samajammin/dotfiles.git ~/.dotfiles```
 
 Install the dotfiles:
 
