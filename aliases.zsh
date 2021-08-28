@@ -25,17 +25,8 @@ alias rm="rm -i"
 
 # Git
 alias gs='git status'
-alias new-branch='git checkout -b'
-alias uncommit="git reset --soft HEAD^"
-# alias gb='git branch --sort=committerdate'
-# alias gba='git branch -a'
-# alias gbn='git checkout -b'
-# alias gcm='git checkout master'
-# alias gcd='git checkout develop'
-# alias gco='git checkout'
-# alias glpp='git log --pretty=oneline'
-# alias gs='git status'
-# alias gd='git diff'
+alias gb='git branch --sort=committerdate'
+alias glpp='git log --pretty=oneline'
 # alias gl='git pull'
 # alias gc='git commit -v'
 # alias gci='git commit --interactive'
@@ -48,10 +39,10 @@ alias uncommit="git reset --soft HEAD^"
 # alias grh='git reset HEAD'
 # alias gcopr='git co-pr'
 
-# alias fetch='git fetch && git checkout'
-# alias prune-branches='git branch --merged | egrep -v "(^\*|master|main|develop|dev)" | xargs git branch -d && git remote prune origin'
-# alias uncommit='git reset --soft HEAD^'
-# alias recommit='git commit --amend --no-edit'
+alias fetch='git fetch && git checkout'
+alias prune-branches='git branch --merged | egrep -v "(^\*|master|main|develop|dev)" | xargs git branch -d && git remote prune origin'
+alias uncommit='git reset --soft HEAD^'
+alias recommit='git commit --amend --no-edit'
 
 # Docker
 alias d="docker"
