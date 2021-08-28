@@ -1,8 +1,10 @@
+# Dotfiles for your local development environment
+
 ## Usage
 
 Clone repository:
 
-```$ git clone git://github.com/samajammin/dotfiles-1.git ~/.dotfiles```
+```$ git clone git://github.com/samajammin/dotfiles.git ~/.dotfiles```
 
 Install the dotfiles:
 
@@ -10,15 +12,21 @@ Install the dotfiles:
 
 Restart your terminal and you are ready to go!
 
-## Themes
+## What's included?
 
-If you're using Iterm2, I recommend the [Atom theme](https://github.com/mbadolato/iTerm2-Color-Schemes/blob/master/schemes/Atom.itermcolors).
-
+- [zsh](http://www.zsh.org/)
+- [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
+- [Spaceship ZSH](https://github.com/denysdovhan/spaceship-prompt)
+- [Powerline fonts](https://github.com/powerline/fonts) (Optional)
+- [Homebrew](https://brew.sh/)
+- [Volta](https://volta.sh/)
+- [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
+    bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
 
 ## License
 
-Thank you [@josemarluedke](https://github.com/josemarluedke) for the dotfiles foundation to build off (& for being an amazing mentor)!
+Thank you [@josemarluedke](https://github.com/josemarluedke) for the [dotfiles foundation](https://github.com/josemarluedke/dotfiles) to build off (and for being an amazing mentor)!
 
-Copyright (c) 2012-2013 Josemar Luedke
+Copyright (c) 2012-2020 Josemar Luedke, Sam Richards
 
 Licensed under the MIT license
