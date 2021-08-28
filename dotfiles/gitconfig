@@ -1,2 +1,5 @@
 [include]
 	path = /Users/samrichards/.dotfiles/config/global.gitconfig
+[user]
+	name = Sam Richards
+	email = sbrichards@gmail.com
