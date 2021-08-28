@@ -1,88 +1,16 @@
-source ~/.dotfiles/env
-source ~/.dotfiles/config
-
-google() {
-  open /Applications/Brave\ Browser.app/ "https://www.google.com/search?q= $1"
-}
-
 drive() {
   open /Applications/Brave\ Browser.app/ "https://drive.google.com/drive/search?hl=en&q=$1"
 }
 
-md() {
- mkdir $1; cd $1
-}
+export EDITOR="code -w"
+export GIT_EDITOR="code -nw"
 
-export EDITOR="code-insiders"
-export GIT_EDITOR="code-insiders -nw"
+export GOPATH=$HOME/code/go
+export PATH=$PATH:$GOPATH/bin
 
-###############################################################################
-# Atom
-alias a='atom'
-alias ah='atom .'
-alias apmup='apm update --no-confirm'
-alias apmi='apm install'
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
 
-###############################################################################
-# Code
-alias ci='code-insiders'
+[ -f ~/.env ] && source ~/.env
 
-###############################################################################
-# Ember
-alias em="ember"
-alias es="ember serve"
-alias ets="ember test --server"
-
-###############################################################################
-# NVM (Node Version Manager )
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-###############################################################################
-# rbenv
-eval "$(rbenv init -)"
-
-###########################################
-# Python
-
-# TODO uncomment for MacOS default python version 3x (e.g. for vyper)
-# export PATH=/usr/local/opt/python/libexec/bin:$PATH
-# then run: $ source ~/vyper-venv/bin/activate
-alias vypervenv="source ~/vyper-venv/bin/activate"
-
-###########################################
-# Go
-export GOPATH="/Users/samrichards/code/go"
-export PATH="/Users/samrichards/code/go/bin:$PATH"
-
-test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-###########################################
-# gcloud
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/samrichards/google-cloud-sdk/path.bash.inc' ]; then . '/Users/samrichards/google-cloud-sdk/path.bash.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/samrichards/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/samrichards/google-cloud-sdk/completion.bash.inc'; fi
-
-###########################################
-# kubectl
-
-alias k="kubectl"
-complete -F __start_kubectl k
-
-###########################################
-# Nix
-if [ -e /Users/samrichards/.nix-profile/etc/profile.d/nix.sh ]; then . /Users/samrichards/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer
-
-###########################################
-# Truffle
-alias t="truffle"
-
-###########################################
-# bash-completion
-export BASH_COMPLETION_COMPAT_DIR="/usr/local/etc/bash_completion.d"
-[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
+export PATH="$HOME/.cargo/bin:$PATH"

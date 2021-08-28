@@ -1,0 +1,6 @@
+brew "bat"
+brew "jq"
+brew "zsh-autosuggestions"
+brew "zsh-completions"
+brew "zsh-syntax-highlighting"
+brew "volta"
