@@ -13,4 +13,4 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 
 [ -f ~/.env ] && source ~/.env
 
-export PATH="$HOME/.cargo/bin:$PATH"
+. "$HOME/.cargo/env"
