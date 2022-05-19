@@ -4,11 +4,15 @@
 
 Clone repository:
 
-```$ git clone git://github.com/samajammin/dotfiles.git ~/.dotfiles```
+```sh
+$ git clone git://github.com/samajammin/dotfiles.git ~/.dotfiles
+```
 
 Install the dotfiles:
 
-```$ sh ~/.dotfiles/install.sh```
+```sh
+$ sh ~/.dotfiles/install.sh
+```
 
 Restart your terminal and you are ready to go!
 
@@ -21,7 +25,11 @@ Restart your terminal and you are ready to go!
 - [Homebrew](https://brew.sh/)
 - [Volta](https://volta.sh/)
 - [Homebrew Bundle](https://github.com/Homebrew/homebrew-bundle) - This will
-    bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
+  bundle dependencies specified at [Brewfile](./Brewfile). (Optional)
+
+## Notes
+
+Some install files are still located at `~/.zshrc`...
 
 ## License
 
