@@ -29,7 +29,6 @@ alias gb='git branch --sort=committerdate'
 alias glpp='git log --pretty=oneline'
 # alias gl='git pull'
 # alias gc='git commit -v'
-# alias gci='git commit --interactive'
 # alias ga='git add'
 # alias gaa='git add --all'
 # alias gmt='git mergetool'
@@ -43,6 +42,9 @@ alias fetch='git fetch && git checkout'
 alias prune-branches='git branch --merged | egrep -v "(^\*|master|main|develop|dev)" | xargs git branch -d && git remote prune origin'
 alias uncommit='git reset --soft HEAD^'
 alias recommit='git commit --amend --no-edit'
+
+# Hardhat
+alias hh="npx hardhat"
 
 # Docker
 alias d="docker"
