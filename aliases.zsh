@@ -1,24 +1,7 @@
 # General
 alias o="open"
 
-# alias grep="grep --color"
-# alias egrep="egrep --color"
-# alias less="less -Xr"
-
-# alias tailf="tail -f"
-# alias l="ls"
-# alias la="ls -a"
-# alias ll="ls -lah"
-# alias ls="ls -G"
-# alias o="open"
-# alias desk="cd ~/Desktop/"
-# alias ~="cd ~/"
-# alias ..="cd ../"
-# alias ...="cd ../../"
-# alias server="open http://localhost:8000 && python -m SimpleHTTPServer"
-# alias filecount="ls -l | grep -v ^l | wc -l"
-
-# Secure your moviments and commands
+# Safety flags
 alias mv="mv -i"
 alias cp="cp -i"
 alias rm="rm -i"
@@ -27,17 +10,6 @@ alias rm="rm -i"
 alias gs='git status'
 alias gb='git branch --sort=committerdate'
 alias glpp='git log --pretty=oneline'
-# alias gl='git pull'
-# alias gc='git commit -v'
-# alias ga='git add'
-# alias gaa='git add --all'
-# alias gmt='git mergetool'
-# alias gx='gitx'
-# alias gg='gitg'
-# alias gp='git push'
-# alias grh='git reset HEAD'
-# alias gcopr='git co-pr'
-
 alias fetch='git fetch && git checkout'
 alias prune-branches='git branch --merged | egrep -v "(^\*|master|main|develop|dev)" | xargs git branch -d && git remote prune origin'
 alias uncommit='git reset --soft HEAD^'

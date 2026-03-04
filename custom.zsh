@@ -1,15 +1,6 @@
 ZSH_THEME="spaceship"
 
-# TODO: overriding plugins here does not appear to work
-# plugins=(
-#   git
-#   bundler
-#   dotenv
-#   last-working-dir
-# )
-
 SPACESHIP_PROMPT_ORDER=(
-  # time          # Time stampts section
   dir           # Current directory section
   git           # Git section (git_branch + git_status)
   node          # Node.js section
@@ -25,7 +16,6 @@ SPACESHIP_HOST_SHOW=false
 SPACESHIP_DIR_TRUNC=0
 SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_GIT_STATUS_COLOR=green
-# SPACESHIP_GIT_STATUS_SHOW=false
 
 source ~/.dotfiles/aliases.zsh
 source ~/.bash_profile

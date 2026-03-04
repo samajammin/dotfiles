@@ -63,19 +63,6 @@ else
   echo "Brew bundle skipped."
 fi
 
-# Install oh my zsh
-# if [ ! -n "$ZSH" ]; then
-#   hijack_env() {
-#     if [[ "$1" != "zsh" ]]; then
-#       env "$@"
-#     fi
-#   }
-
-#   alias env="hijack_env"
-#   curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -so - | sh
-#   unalias env
-# fi
-
 # Install Spaceship zsh theme
 ZSH_CUSTOM=~/.oh-my-zsh/custom
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt"
