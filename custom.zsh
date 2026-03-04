@@ -18,7 +18,7 @@ SPACESHIP_DIR_TRUNC_REPO=false
 SPACESHIP_GIT_STATUS_COLOR=green
 
 source ~/.dotfiles/aliases.zsh
-source ~/.bash_profile
+source ~/.dotfiles/exports.zsh
 if command -v brew &> /dev/null; then
   BREW_PREFIX=$(brew --prefix)
   [ -f "$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh" ] && source "$BREW_PREFIX/share/zsh-autosuggestions/zsh-autosuggestions.zsh"
